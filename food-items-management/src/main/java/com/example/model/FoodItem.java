@@ -7,15 +7,10 @@ import javax.persistence.*;
 public class FoodItem {
     
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	@Column(name="item_number")
 	private Integer itemNumber;
-	
-	@Column(name="item_name")
 	private String itemName;
-	
 	private String cuisine;
-	private Double price;
+	private String price;
 	private String availabity;
 
 	public Integer getItemNumber() {
@@ -42,11 +37,11 @@ public class FoodItem {
 		this.cuisine = cuisine;
 	}
 
-	public Double getPrice() {
+	public String getPrice() {
 		return price;
 	}
 
-	public void setPrice(Double price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 
@@ -58,4 +53,11 @@ public class FoodItem {
 		this.availabity = availabity;
 	}
 
+	@Override
+	public String toString() {
+		return "FoodItem [itemNumber=" + itemNumber + ", itemName=" + itemName + ", cuisine=" + cuisine + ", price="
+				+ price + ", availabity=" + availabity + "]";
+	}
+    
+	
 }
