@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.fooditemsmanagement.model;
 
 import javax.persistence.*;
 

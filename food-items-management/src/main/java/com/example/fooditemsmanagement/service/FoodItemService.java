@@ -1,12 +1,12 @@
-package com.example.service;
+package com.example.fooditemsmanagement.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.model.FoodItem;
-import com.example.repository.FoodItemDao;
+import com.example.fooditemsmanagement.model.FoodItem;
+import com.example.fooditemsmanagement.repository.FoodItemDao;
 
 
 @Service
