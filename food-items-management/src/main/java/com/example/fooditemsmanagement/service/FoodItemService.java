@@ -23,17 +23,13 @@ public class FoodItemService {
 	
 	public List<FoodItem> showAllItems(){
 		
-		List<FoodItem> foodItem = (List<FoodItem>)foodItemDao.findAll();
-		return foodItem;	
+		
+		return foodItemDao.findAll();	
 	}
 	
 	 public void deleteItem(Integer itemNumber){
 	     foodItemDao.deleteById(itemNumber);
 	    }
 
-	   public void findItem(Integer itemNumber){
-	     foodItemDao.getReferenceById(itemNumber);
-	    }
-	
 	
 }
