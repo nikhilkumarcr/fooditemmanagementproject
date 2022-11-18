@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1" isELIgnored="false"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page import="com.example.fooditems.model.FoodItem"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,18 +13,20 @@
 </head>
 <body class="container">
 
+<br><br>
 <div >
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
 				<div class="card">
 					<div class="card-body">
 						<h4 class="text-center text-primary">Add New Food Item</h4>
+						<p class="text-center text-danger">* Items Entry is Compulsory</p>
 
-						<form action="">
+						<form action="addingitem" method="post">
 							
 							<div class="form-group">
 								Enter Item Number<input type="text"
-									class="form-control" name="itemNumber">
+									class="form-control" name="itemNumber" value="${id }" readonly>
 							</div>
 							<div class="form-group">
 								Enter Item Name<input type="text"
@@ -42,10 +46,10 @@
 
 							<div class="form-group">
 								Availability<input type="text"
-									class="form-control" name="avialability">
+									class="form-control" name="availabality">
 							</div>
-
-							<a href ="homePage" class="btn btn-primary btn-block">Submit</a>
+                             <br>
+							<div><button type="submit" value="submit" class="btn btn-success">Add Item</button></div>
 							</form>
 					</div>
 				</div>

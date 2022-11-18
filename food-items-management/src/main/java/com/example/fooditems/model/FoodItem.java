@@ -1,9 +1,9 @@
-package com.example.fooditemsmanagement.model;
+package com.example.fooditems.model;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name="fooditem")
+@Table(name="foodmenu")
 public class FoodItem {
     
 	@Id

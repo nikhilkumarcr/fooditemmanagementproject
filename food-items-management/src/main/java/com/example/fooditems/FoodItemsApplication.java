@@ -1,16 +1,14 @@
-package com.example.fooditemsmanagement;
+package com.example.fooditems;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-
 @SpringBootApplication
-public class FoodItemsManagementApplication {
+public class FoodItemsApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(FoodItemsManagementApplication.class,
+		SpringApplication.run(FoodItemsApplication.class,
 				args);
 
 	}
